@@ -1,0 +1,59 @@
+h1 {
+    font-weight: 300;
+    font-size: 50px;
+}
+
+.font {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+@media screen and (min-width: 700px) {
+    body {
+        padding: 0 10vw 0 10vw;
+    }
+}
+
+#Heading {
+    text-align: center;
+}
+
+#InputFields {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;  
+}
+
+.inpResolution {
+    flex: 50%;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    outline: 0;
+}
+
+#ResX {
+    margin-right: 10px;
+}
+
+#ResY {
+    margin-left: 10px;
+}
+
+#ConvertArea {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#Convert {
+    text-transform: uppercase;
+}
+
+#ResultValue {
+    font-weight: 400;
+    font-size: medium;
+}
