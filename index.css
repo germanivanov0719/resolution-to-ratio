@@ -9,6 +9,7 @@ h1 {
 
 body {
     margin: 0;
+    padding: 0 20px 0 20px;
 }
 
 @media screen and (min-width: 700px) {
@@ -51,6 +52,9 @@ body {
 
 #Convert {
     text-transform: uppercase;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
 }
 
 #ResultValue {
