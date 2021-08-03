@@ -4,26 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resolution to Ratio</title>
     <link href="index.css" rel="stylesheet"/>
+    <link rel="icon" href="./favicon.png"/>
+    <meta name="description" content="This is a website which helps you to convert display resolution to ratio."/>
 </head>
-<body>
+<body id="body">
     <div id="Heading" class="font">
         <h1>Resolution to Ratio</h1>
     </div>
     <div id="instructions" class="font">
-        <!-- passed for now, do later -->
+        <p class="font">This website helps you to convert resolution to aspect ratio.</p>
     </div>
     <div id="InputFields">
-        <input class="font inpResolution" id="ResX" type="number" placeholder="Width"></input>
-        <input class="font inpResolution" id="ResY" type="number" placeholder="Height"></input>
+        <input class="font inpResolution border" id="ResX" type="number" placeholder="Width"></input>
+        <input class="font inpResolution border" id="ResY" type="number" placeholder="Height"></input>
     </div>
     <div id="ConvertArea">
-        <button id="Convert" class="font" onclick="convert()">Convert</button>
+        <button id="Convert" class="font border" onclick="convert()">Convert</button>
     </div>
     <div id="ResultArea">
-        <p id="ResultValue" class="font"></h2>
+        <p id="ResultValue" class="font"></p>
+        <p id="MoreInfo" class="font"></p>
+    </div>
+    <br/>
+    <div id="bottom-navbar">
+        <button id="darkModeToggle" onclick="{darkAuto=false; darkModeToggle()}" class="font border">Switch to Light Mode</button> 
     </div>
 </body>
 </html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="index.js"></script>
